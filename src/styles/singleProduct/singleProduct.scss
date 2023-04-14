@@ -1,0 +1,184 @@
+.singleProduct {
+   padding: 3rem 10rem;
+   .backToShop {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      a {
+         color: black;
+         font-weight: 500;
+         font-size: 1.1rem;
+      }
+      svg {
+         font-size: 0.9rem;
+      }
+   }
+   .singlePage__content {
+      display: flex;
+      // align-items: center;
+      justify-content: space-between;
+      border: 1px solid #e1e1e1;
+      margin-top: 40px;
+      min-height: 512px;
+      .image_collection {
+         background-color: white;
+         padding: 10px;
+         // height: 100vh;
+         border-width: 1px;
+         border-color: transparent #e1e1e1 transparent transparent;
+         border-style: solid;
+         .single_of_coll {
+            border: 1px solid #e1e1e1;
+            cursor: pointer;
+            &:not(:first-child) {
+               margin-top: 10px;
+            } 
+            width: 140px;
+            height: 120px;
+            // width: 180px;
+            img {
+               width: 100%;
+               height: 100%;
+               object-fit: contain;
+            }
+         }
+      }
+      .main_image {
+         background-color: #f8f8f8;
+         // margin: 40px;
+         // height: 100vh;
+         width: 700px;
+         img {
+            // padding: 20px;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+         }
+      }
+      .product_info {
+         background-color: white;
+         // height: 100vh;
+         padding: 30px;
+         &__brand {
+            color: #818181;
+            font-weight: 700;
+         }
+         &__name {
+            font-weight: 700;
+            font-size: 2.1rem;
+         }
+         &__description {
+            margin: 20px 0;
+            font-weight: 500;
+            font-size: 0.9rem;
+         }
+         hr {
+            margin-bottom: 20px;
+         }
+         &__lens {
+            color: #818181;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: block;
+            font-size: 0.9rem;
+         }
+         .selectSize {
+            position: relative;
+            &__header {
+               border: 1px solid rgb(204, 204, 204);
+               margin-bottom: 20px;
+               padding: 10px;
+               cursor: pointer;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               border-radius: 3px;
+               color: #818181;
+               font-weight: 700;
+               transition: .3s;
+               font-size: 0.9rem;
+               &__open {
+                  transform: rotate(180deg);
+                  transition: .3s;
+               }
+               svg {
+                  transition: .3s;
+               }
+            }
+            &__content {
+               background-color: white;
+               border: 1px solid rgb(204, 204, 204);
+               display: none;
+               position: absolute;
+               width: 100%;
+               border-radius: 3px;
+               z-index: 30;
+               &__open {
+                  display: block;
+               }
+               ul {
+                  li {
+                     padding: 7px 20px;
+                     font-weight: 500;
+                     font-size: 1rem;
+                     transition: .3s;
+                     cursor: pointer;
+                     &:hover {
+                        background-color: #e1e1e1;
+                        transition: .3s;
+                     }
+                  }
+               }
+            }
+         }
+         .colors__chosen {
+            span {
+               color: #818181;
+               font-weight: 700;
+               margin-bottom: 20px;
+               display: block;
+            }
+            .colors {
+               display: flex;
+               align-items: center;
+               gap: 15px;
+               margin-bottom: 20px;
+               .color {
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  cursor: pointer;
+                  transition: .3s;
+                  position: relative;
+                  &:hover {
+                     transform: scale(1.1);
+                     transition: .3s;
+                  }
+                  span {
+                     color: white;
+                     font-size: 0.8rem;
+                     position: absolute;
+                     top: 57%;
+                     left: 50%;
+                     transform: translate(-50%, -50%);
+                  }
+               }
+            }
+         }
+         .price {
+            font-size: 2.8rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+         }
+         button {
+            background-color: black;
+            color: white;
+            padding: 15px 25px;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 0.7rem;
+            border: none;
+         }
+      }
+   }
+}

@@ -1,0 +1,18 @@
+@import "./variables/vars";
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+a {
+   text-decoration: none;
+}
+ul {
+   list-style: none;
+}
+body {
+   font-family: $mainFont;
+   background-color: #f9f9f9;
+   overflow-x: hidden;
+}

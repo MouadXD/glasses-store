@@ -1,0 +1,114 @@
+@import "../variables/vars";
+
+.navbar {
+   padding: 30px 50px 5px 50px;
+   // padding: 10px 50px;
+   nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   &__logo__links {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+   }
+   &__logo {
+      h1 {
+         // position: relative;
+         // &::before {
+         //    content: "GlassBuy";
+         //    position: absolute;
+         //    color: $logoColor;
+         //    font-size: 1.7rem;
+         //    font-weight: 700;
+         //    top: 3px;
+         //    left: 3px;
+         // }
+         a {
+            color: black;
+            font-size: 1.7rem;
+            font-weight: 700;
+         }
+      }
+   }
+   &__links {
+      ul {
+         display: flex;
+         align-items: center;
+         li {
+            a {
+               padding: 10px 13px;
+               color: #6f6f6f;
+               font-weight: 500;
+               font-size: 0.9rem;
+               &:hover {
+                  background-color: #f2f2f2;
+               }
+            }
+            .active {
+               color: black;
+            }
+         }
+      }
+   }
+   &__search__cart {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      .search {
+         position: relative;
+         border: 1px solid #e1e1e1;
+         width: 300px;
+         input {
+            padding: 12px 16px 12px 48px;
+            width: 100%;
+            border: none;
+            outline: none;
+            background: #fff;
+            font-weight: 500;
+            color: black;
+            font-weight: 500;
+            &::placeholder {
+               font-weight: 700;
+               font-size: 0.7rem;
+               color: #6f6f6f;
+            }
+         }
+         &__icon {
+            height: 16px;
+            position: absolute;
+            left: 15px;
+            top:50%;
+            transform: translateY(-50%);
+            svg {
+               font-size: 1rem;
+               color: #6f6f6f;
+            }
+         }
+      }
+      .cart {
+         &__icon {
+            cursor: pointer;
+            font-size: 2.2rem;
+            position: relative;
+            span {
+               position: absolute;
+               background-color: $logoColor;
+               border-radius: 50%;
+               top: -7px;
+               right: -7px;
+               display: block;
+               width: 17px;
+               height: 17px;
+               text-align: center;
+               font-size: 0.8rem;
+               color: white;
+            }
+            svg {
+               font-size: 2.2rem;
+            }
+         }
+      }
+   }
+}

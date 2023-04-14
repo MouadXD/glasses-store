@@ -1,0 +1,45 @@
+footer {
+   background-color: #f0f0f0;
+   margin-top: 100px;
+   padding: 50px 80px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   .author {
+      font-weight: 500;
+      font-size: 0.9rem;
+      a {
+         color: black;
+         text-decoration: underline;
+         font-size: 0.9rem;
+      }
+   }
+   .logo {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1 {
+         font-size: 1.8rem;
+         font-weight: 700;
+         margin-bottom: 5px;
+      }
+      span {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         font-weight: 500;
+         gap: 5px;
+      }
+   }
+   .designFrom {
+      font-weight: 500;
+      font-size: 0.9rem;
+      a {
+         font-size: 0.9rem;
+         color: black;
+         text-decoration: underline;
+      }
+   }
+}
